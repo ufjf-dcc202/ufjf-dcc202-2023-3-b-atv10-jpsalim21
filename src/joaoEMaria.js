@@ -7,7 +7,6 @@ function getMaria(){
 function setMaria(valor){
     maria = valor;
 }
-
 function getJoao(){
     return joao;
 }
