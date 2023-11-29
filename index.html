@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCC202 - Atividade 10: João Pedro Miranda Salim</title>
-    <script src="src/main.js"type="module"></script>
+    <title>Document</title>
 </head>
 <body>
     <main>
-        <h1>DCC202 - Atividade 10: João Pedro Miranda Salim</h1>
-        <p>Esta é a página principal tem código JavaScript nela. Você só verá o resultado no console e durante a depuração.</p>
+        <h1>Exemplo 10: João Pedro Salim</h1>
     </main>
+    <script>
+        const pessoaFala = function(){
+            console.log("Olá eu sou " + this.nome + ", tenho " + this.altura + "m de altura.");
+        }
+        let joao = {
+            nome: "Joao",
+            altura: 1.67,
+            documento: "MG12345",
+            fale: pessoaFala,
+        };
+        let maria = {
+            nome: "Maria",
+            altura: 2.09,
+            documento: "MG32145",
+            fale: pessoaFala,
+        };
+        console.log(joao);
+    </script>
 </body>
 </html>
